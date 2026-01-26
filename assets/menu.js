@@ -3,7 +3,10 @@ window.menuData = [
     title: "Getting Started",
     icon: "play",
     submenus: [
-      { name: "Installation Guide", file: "installation.md" },
+      {
+        name: "Installation Guide",
+        file: "/docs/getting-started/installation.md",
+      },
       {
         name: "System Requirements",
         file: "/docs/getting-started/requirements.md",
@@ -13,6 +16,6 @@ window.menuData = [
   {
     title: "Development",
     icon: "code-2",
-    submenus: [{ name: "Generators", file: "generators.md" }],
+    submenus: [{ name: "Generators", file: "/docs/development/generators.md" }],
   },
 ];

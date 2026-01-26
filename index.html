@@ -14,6 +14,15 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans:wght@400;500;700&display=swap"
             rel="stylesheet"
         />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/github.min.css"
+        />
         <script src="./assets/menu.js"></script>
         <script src="https://unpkg.com/lucide@latest"></script>
         <script
@@ -60,6 +69,9 @@
             }
             [x-cloak] {
                 display: none !important;
+            }
+            .markdown-body {
+                background-color: transparent;
             }
         </style>
     </head>
@@ -168,8 +180,8 @@
                         </template>
                         <template x-for="item in results" :key="item.file">
                             <a
-                                :href="item.file"
-                                class="flex flex-col px-4 py-2 hover:bg-slate-100 dark:hover:bg-border-dark text-sm"
+                                @click="loadContent(item.file)"
+                                class="flex flex-col px-4 py-2 hover:bg-slate-100 dark:hover:bg-border-dark text-sm cursor-pointer"
                             >
                                 <span
                                     class="text-slate-900 dark:text-white"
@@ -190,14 +202,14 @@
                 >
                     <div class="mb-4">
                         <a
-                            class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary font-medium text-sm"
-                            href="#"
+                            @click="loadContent('/docs/getting-started/installation.md')"
+                            class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary font-medium text-sm cursor-pointer"
                         >
                             <i data-lucide="home" class="size-5"></i>Home</a
                         >
                         <a
-                            class="flex items-center gap-3 px-3 py-2 mt-2 rounded-lg hover:bg-slate-200 dark:hover:bg-surface-dark text-slate-600 dark:text-slate-400 text-sm font-medium"
-                            href="#"
+                            @click="loadContent('/docs/getting-started/requirements.md')"
+                            class="flex items-center gap-3 px-3 py-2 mt-2 rounded-lg hover:bg-slate-200 dark:hover:bg-surface-dark text-slate-600 dark:text-slate-400 text-sm font-medium cursor-pointer"
                         >
                             <i data-lucide="zap" class="size-5"></i>What's
                             New</a
@@ -233,8 +245,8 @@
                                     :key="item.name"
                                 >
                                     <a
-                                        :href="item.file"
-                                        class="block px-3 py-1.5 rounded hover:bg-slate-200 dark:hover:bg-surface-dark text-sm text-slate-600 dark:text-slate-400 hover:text-primary"
+                                        @click="loadContent(item.file)"
+                                        class="block px-3 py-1.5 rounded hover:bg-slate-200 dark:hover:bg-surface-dark text-sm text-slate-600 dark:text-slate-400 hover:text-primary cursor-pointer"
                                         x-text="item.name"
                                     ></a>
                                 </template>
@@ -246,8 +258,8 @@
                     class="p-4 border-t border-slate-200 dark:border-border-dark"
                 >
                     <a
-                        class="flex items-center gap-3 text-xs text-slate-500 hover:text-primary transition-colors"
-                        href="#"
+                        @click="loadContent('/docs/feedback.md')"
+                        class="flex items-center gap-3 text-xs text-slate-500 hover:text-primary transition-colors cursor-pointer"
                     >
                         <i data-lucide="message-square" class="size-4"></i
                         >Provide Feedback</a
@@ -257,11 +269,25 @@
             <main
                 class="flex-1 overflow-y-auto bg-background-light dark:bg-background-dark scroll-smooth"
             >
-                <div class="flex justify-center w-full min-h-full">
-                    this is a content.
+                <div
+                    id="content"
+                    class="markdown-body w-full max-w-4xl mx-auto p-8"
+                >
+                    <div class="text-center py-20 text-slate-400">
+                        <i
+                            data-lucide="file-text"
+                            class="size-16 mx-auto mb-4 opacity-50"
+                        ></i>
+                        <p class="text-lg">
+                            Select a document from the sidebar to view content
+                        </p>
+                    </div>
                 </div>
             </main>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
         <script>
             document.addEventListener("alpine:init", () => {
                 Alpine.directive("icons", (el) => {
@@ -272,6 +298,7 @@
                     });
                 });
             });
+
             function menuSearch() {
                 return {
                     query: "",
@@ -297,6 +324,106 @@
                     },
                 };
             }
+
+            function loadContent(filePath) {
+                const baseUrl = "https://ppu-training.github.io/genexus";
+                const fullUrl = filePath.startsWith("http")
+                    ? filePath
+                    : baseUrl + filePath;
+
+                const contentDiv = document.getElementById("content");
+                contentDiv.innerHTML = `
+                    <div class="flex items-center justify-center min-h-[400px]">
+                        <div class="text-center">
+                            <i data-lucide="loader" class="size-12 mx-auto mb-4 text-primary animate-spin"></i>
+                            <p class="text-slate-600 dark:text-slate-400">Loading content...</p>
+                        </div>
+                    </div>
+                `;
+
+                lucide.createIcons();
+
+                fetch(fullUrl)
+                    .then((res) => {
+                        if (!res.ok) throw new Error("Failed to load content");
+                        return res.text();
+                    })
+                    .then((md) => {
+                        marked.setOptions({
+                            highlight: function (code, lang) {
+                                if (window.hljs && lang) {
+                                    try {
+                                        return window.hljs.highlight(code, {
+                                            language: lang,
+                                        }).value;
+                                    } catch (e) {
+                                        return window.hljs.highlightAuto(code)
+                                            .value;
+                                    }
+                                }
+                                return code;
+                            },
+                        });
+
+                        const html = marked.parse(md);
+                        contentDiv.innerHTML = `
+                            <div class="prose dark:prose-invert max-w-none">
+                                ${html}
+                            </div>
+                        `;
+
+                        if (window.hljs) {
+                            document
+                                .querySelectorAll("pre code")
+                                .forEach((block) => {
+                                    window.hljs.highlightElement(block);
+                                });
+                        }
+
+                        lucide.createIcons();
+
+                        history.pushState(
+                            {},
+                            "",
+                            `?file=${encodeURIComponent(filePath)}`,
+                        );
+                    })
+                    .catch((err) => {
+                        contentDiv.innerHTML = `
+                            <div class="text-center py-20">
+                                <i data-lucide="alert-circle" class="size-16 mx-auto mb-4 text-red-500"></i>
+                                <h2 class="text-2xl font-bold mb-2">Failed to load content</h2>
+                                <p class="text-slate-600 dark:text-slate-400">${err.message}</p>
+                                <button @click="loadContent('${filePath}')" class="mt-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
+                                    Try Again
+                                </button>
+                            </div>
+                        `;
+                        lucide.createIcons();
+                    });
+            }
+
+            window.loadContent = loadContent;
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const params = new URLSearchParams(window.location.search);
+                const fileParam = params.get("file");
+
+                if (fileParam) {
+                    loadContent(fileParam);
+                }
+
+                lucide.createIcons();
+            });
+
+            window.addEventListener("popstate", () => {
+                const params = new URLSearchParams(window.location.search);
+                const fileParam = params.get("file");
+
+                if (fileParam) {
+                    loadContent(fileParam);
+                }
+            });
         </script>
     </body>
 </html>
