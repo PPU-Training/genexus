@@ -202,13 +202,13 @@
                 >
                     <div class="mb-4">
                         <a
-                            @click="loadContent('/docs/getting-started/installation.md')"
+                            @click="loadContent('/docs/main-menu/home.md')"
                             class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary font-medium text-sm cursor-pointer"
                         >
                             <i data-lucide="home" class="size-5"></i>Home</a
                         >
                         <a
-                            @click="loadContent('/docs/getting-started/requirements.md')"
+                            @click="loadContent('/docs/main-menu/new.md')"
                             class="flex items-center gap-3 px-3 py-2 mt-2 rounded-lg hover:bg-slate-200 dark:hover:bg-surface-dark text-slate-600 dark:text-slate-400 text-sm font-medium cursor-pointer"
                         >
                             <i data-lucide="zap" class="size-5"></i>What's
@@ -411,6 +411,8 @@
 
                 if (fileParam) {
                     loadContent(fileParam);
+                } else {
+                    loadContent("/docs/main-menu/home.md");
                 }
 
                 lucide.createIcons();
@@ -422,6 +424,8 @@
 
                 if (fileParam) {
                     loadContent(fileParam);
+                } else {
+                    loadContent("/docs/main-menu/home.md");
                 }
             });
         </script>
