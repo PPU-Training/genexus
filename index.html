@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GeneXus Documentation</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#197fe6",
+              "background-light": "#f6f7f8",
+              "background-dark": "#111921",
+              "surface-dark": "#1a242f",
+              "border-dark": "#2a3b4c",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"],
+              "body": ["Noto Sans", "sans-serif"],
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        /* Custom scrollbar for sidebar */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #111921; 
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #2a3b4c; 
+            border-radius: 3px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #197fe6; 
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 flex flex-col h-screen overflow-hidden">
+<!-- Top Navigation -->
+<header class="flex-none flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-border-dark bg-white dark:bg-[#0d131a] px-6 py-3 z-20">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary flex items-center justify-center">
+<svg class="h-8 w-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">GeneXus Docs</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">GeneXus.com</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Community</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">GitHub</a>
+</div>
+<div class="flex gap-2">
+<button class="flex items-center justify-center overflow-hidden rounded-lg size-10 bg-slate-100 dark:bg-surface-dark text-slate-900 dark:text-white hover:bg-slate-200 dark:hover:bg-border-dark transition-colors">
+<span class="material-symbols-outlined" style="font-size: 20px;">language</span>
+</button>
+<button class="flex items-center justify-center overflow-hidden rounded-lg size-10 bg-slate-100 dark:bg-surface-dark text-slate-900 dark:text-white hover:bg-slate-200 dark:hover:bg-border-dark transition-colors">
+<span class="material-symbols-outlined" style="font-size: 20px;">dark_mode</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Layout Body -->
+<div class="flex flex-1 overflow-hidden relative">
+<!-- Left Sidebar -->
+<aside class="hidden lg:flex flex-col w-72 border-r border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-[#0f151c] flex-none z-10">
+<!-- Search Area -->
+<div class="p-4 border-b border-slate-200 dark:border-border-dark sticky top-0 bg-slate-50 dark:bg-[#0f151c] z-10">
+<label class="flex flex-col w-full h-10">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-border-dark focus-within:ring-2 focus-within:ring-primary focus-within:border-primary">
+<div class="text-slate-400 flex items-center justify-center pl-3">
+<span class="material-symbols-outlined" style="font-size: 20px;">search</span>
+</div>
+<input class="flex w-full min-w-0 flex-1 bg-transparent border-none text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-0 placeholder:text-slate-400 px-2" placeholder="Search..." value=""/>
+<div class="flex items-center pr-2">
+<kbd class="hidden xl:inline-flex items-center h-5 px-1.5 text-[10px] font-medium text-slate-500 border border-slate-300 dark:border-slate-600 rounded bg-slate-100 dark:bg-slate-800">⌘K</kbd>
+</div>
+</div>
+</label>
+</div>
+<!-- Navigation Tree -->
+<nav class="flex-1 overflow-y-auto p-4 flex flex-col gap-1 custom-scrollbar">
+<div class="mb-4">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary font-medium text-sm" href="#">
+<span class="material-symbols-outlined filled" style="font-size: 20px;">home</span>
+                        Home
+                    </a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-slate-200 dark:hover:bg-surface-dark text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm font-medium" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">new_releases</span>
+                        What's New
+                    </a>
+</div>
+<div class="text-xs font-bold text-slate-500 uppercase tracking-wider px-3 mb-2 mt-2">Documentation</div>
+<!-- Getting Started -->
+<details class="group" open="">
+<summary class="flex cursor-pointer items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-200 dark:hover:bg-surface-dark text-slate-700 dark:text-slate-300">
+<span class="text-sm font-medium">Getting Started</span>
+<span class="material-symbols-outlined transform transition-transform group-open:rotate-180 text-slate-400" style="font-size: 18px;">expand_more</span>
+</summary>
+<div class="pl-4 pr-2 pt-1 pb-2 flex flex-col gap-0.5 border-l border-slate-200 dark:border-border-dark ml-4 mt-1">
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">Installation Guide</a>
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">System Requirements</a>
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">My First App</a>
+</div>
+</details>
+<!-- Core Concepts -->
+<details class="group">
+<summary class="flex cursor-pointer items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-200 dark:hover:bg-surface-dark text-slate-700 dark:text-slate-300">
+<span class="text-sm font-medium">Core Concepts</span>
+<span class="material-symbols-outlined transform transition-transform group-open:rotate-180 text-slate-400" style="font-size: 18px;">expand_more</span>
+</summary>
+<div class="pl-4 pr-2 pt-1 pb-2 flex flex-col gap-0.5 border-l border-slate-200 dark:border-border-dark ml-4 mt-1">
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">Knowledge Base</a>
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">Data Modeling</a>
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">User Interface</a>
+</div>
+</details>
+<!-- Development -->
+<details class="group">
+<summary class="flex cursor-pointer items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-200 dark:hover:bg-surface-dark text-slate-700 dark:text-slate-300">
+<span class="text-sm font-medium">Development</span>
+<span class="material-symbols-outlined transform transition-transform group-open:rotate-180 text-slate-400" style="font-size: 18px;">expand_more</span>
+</summary>
+<div class="pl-4 pr-2 pt-1 pb-2 flex flex-col gap-0.5 border-l border-slate-200 dark:border-border-dark ml-4 mt-1">
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">GeneXus Language</a>
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">Design Systems</a>
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">Generators</a>
+</div>
+</details>
+<!-- API Reference -->
+<details class="group">
+<summary class="flex cursor-pointer items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-200 dark:hover:bg-surface-dark text-slate-700 dark:text-slate-300">
+<span class="text-sm font-medium">API Reference</span>
+<span class="material-symbols-outlined transform transition-transform group-open:rotate-180 text-slate-400" style="font-size: 18px;">expand_more</span>
+</summary>
+<div class="pl-4 pr-2 pt-1 pb-2 flex flex-col gap-0.5 border-l border-slate-200 dark:border-border-dark ml-4 mt-1">
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">Data Types</a>
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">Domains</a>
+<a class="block px-3 py-1.5 rounded text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary hover:bg-slate-100 dark:hover:bg-white/5" href="#">Rest API</a>
+</div>
+</details>
+</nav>
+<div class="p-4 border-t border-slate-200 dark:border-border-dark">
+<a class="flex items-center gap-3 text-xs text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-size: 16px;">chat_bubble</span>
+                    Provide Feedback
+                 </a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto bg-background-light dark:bg-background-dark scroll-smooth">
+<div class="flex justify-center w-full min-h-full">
+<div class="w-full max-w-[1000px] px-6 md:px-12 py-10 md:py-16 flex flex-col gap-10">
+<!-- Hero Section -->
+<div class="flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/20 w-fit border border-blue-100 dark:border-blue-800">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-semibold text-primary uppercase tracking-wide">Documentation v18</span>
+</div>
+<div class="space-y-4">
+<h1 class="text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] text-slate-900 dark:text-white">
+                                GeneXus Documentation
+                            </h1>
+<p class="text-lg md:text-xl font-normal text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+                                Welcome to the official documentation for GeneXus. Learn how to build mission-critical applications that evolve with your business, from your first prototype to global deployment.
+                            </p>
+</div>
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="inline-flex h-11 items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white shadow-lg shadow-blue-500/20 transition-all hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900" href="#">
+                                Start Tutorial
+                            </a>
+<button class="inline-flex h-11 items-center justify-center rounded-lg border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark px-6 text-sm font-bold text-slate-700 dark:text-slate-200 transition-all hover:bg-slate-50 dark:hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-slate-200">
+                                View API Reference
+                            </button>
+</div>
+</div>
+<!-- Divider -->
+<div class="h-px bg-slate-200 dark:bg-border-dark w-full"></div>
+<!-- Quick Links Grid -->
+<div class="flex flex-col gap-6">
+<h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Quick Links</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Installation Card -->
+<a class="group relative flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 dark:hover:shadow-none hover:-translate-y-1" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-900/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">download</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Installation</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                                        Get your development environment set up and ready to code in minutes.
+                                    </p>
+</div>
+<div class="mt-auto pt-2 flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 transition-transform">
+                                    Read Guide <span class="material-symbols-outlined ml-1" style="font-size: 16px;">arrow_forward</span>
+</div>
+</a>
+<!-- First App Card -->
+<a class="group relative flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 dark:hover:shadow-none hover:-translate-y-1" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-900/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">rocket_launch</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">First App Tutorial</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                                        A step-by-step walkthrough to building and running your first application.
+                                    </p>
+</div>
+<div class="mt-auto pt-2 flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 transition-transform">
+                                    Start Tutorial <span class="material-symbols-outlined ml-1" style="font-size: 16px;">arrow_forward</span>
+</div>
+</a>
+<!-- Deployment Card -->
+<a class="group relative flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 dark:hover:shadow-none hover:-translate-y-1" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-900/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">cloud_upload</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Deployment</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                                        Learn how to deploy your applications to the cloud or on-premise servers.
+                                    </p>
+</div>
+<div class="mt-auto pt-2 flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 transition-transform">
+                                    View Options <span class="material-symbols-outlined ml-1" style="font-size: 16px;">arrow_forward</span>
+</div>
+</a>
+<!-- Architecture -->
+<a class="group relative flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 dark:hover:shadow-none hover:-translate-y-1" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-900/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">schema</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Architecture</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                                        Deep dive into how GeneXus generates code and handles databases.
+                                    </p>
+</div>
+<div class="mt-auto pt-2 flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 transition-transform">
+                                    Learn More <span class="material-symbols-outlined ml-1" style="font-size: 16px;">arrow_forward</span>
+</div>
+</a>
+<!-- Samples -->
+<a class="group relative flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 dark:hover:shadow-none hover:-translate-y-1" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-900/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">code_blocks</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Samples</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                                        Explore open-source sample applications to jumpstart your development.
+                                    </p>
+</div>
+<div class="mt-auto pt-2 flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 transition-transform">
+                                    Browse Samples <span class="material-symbols-outlined ml-1" style="font-size: 16px;">arrow_forward</span>
+</div>
+</a>
+<!-- Community -->
+<a class="group relative flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 dark:hover:shadow-none hover:-translate-y-1" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-900/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">groups</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Community</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                                        Connect with other developers, ask questions, and share knowledge.
+                                    </p>
+</div>
+<div class="mt-auto pt-2 flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 transition-transform">
+                                    Join Discussion <span class="material-symbols-outlined ml-1" style="font-size: 16px;">arrow_forward</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Popular Topics / Footer area -->
+<div class="mt-8 rounded-2xl bg-gradient-to-r from-slate-900 to-slate-800 p-8 md:p-12 relative overflow-hidden" data-alt="Abstract gradient background with blue accents representing code flow">
+<div class="absolute top-0 right-0 -mt-10 -mr-10 h-64 w-64 rounded-full bg-primary/20 blur-3xl"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="max-w-xl">
+<h3 class="text-2xl font-bold text-white mb-2">Join the GeneXus Community</h3>
+<p class="text-slate-300">Stay up to date with the latest releases, tutorials, and community events.</p>
+</div>
+<div class="flex gap-4">
+<button class="bg-white text-slate-900 hover:bg-slate-100 font-bold py-2.5 px-5 rounded-lg transition-colors">
+                                    Join Discord
+                                </button>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-10 border-t border-slate-200 dark:border-border-dark pt-8 pb-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm text-slate-500 dark:text-slate-400">© 2023 GeneXus. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined" style="font-size: 14px;">edit</span>
+                                    Edit on GitHub
+                                </a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</main>
+</div>
+</body></html>
