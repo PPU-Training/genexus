@@ -1,10 +1,10 @@
 # 📘 GeneXus Documentation & Training Repository
 
-This repository provides complete documentation and learning materials for **GeneXus 18**, based on a structured training syllabus designed for beginners to professional developers.
+This repository provides complete documentation and learning materials for **GeneXus**, based on a structured training syllabus designed for beginners to professional developers.
 
 It covers the full development lifecycle using GeneXus, including:
 
-- Overview of GeneXus 18  
+- Overview of GeneXus 
 - Installation & Initial Configuration  
 - Navigating the Interface & Basic Features  
 - User Interface Design  
