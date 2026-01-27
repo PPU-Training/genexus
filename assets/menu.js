@@ -40,4 +40,14 @@ window.menuData = [
     icon: "code-2",
     submenus: [{ name: "Generators", file: "/docs/development/generators.md" }],
   },
+  {
+    title: "Case Studies",
+    icon: "code-2",
+    submenus: [
+      {
+        name: "Show data on table",
+        file: "/docs/development/show-data-on-table.md",
+      },
+    ],
+  },
 ];
