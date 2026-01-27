@@ -10,7 +10,7 @@ Menampilkan Data ke Halaman Menggunakan Tabel
 Modul ini membahas bagaimana menampilkan data yang berasal dari suatu *entity* ke dalam sebuah *screen* menggunakan komponen tabel di GeneXus.
 
 **Tujuan Pembelajaran**  
-Setelah menyelesaikan modul ini, peserta diharapkan mampu menyajikan data dari sebuah tTransaction ke dalam tampilan aplikasi dalam bentuk tabel secara terstruktur dan mudah dibaca.
+Setelah menyelesaikan modul ini, peserta diharapkan mampu menyajikan data dari sebuah Transaction ke dalam tampilan aplikasi dalam bentuk tabel secara terstruktur dan mudah dibaca.
 
 **Ruang Lingkup Materi**  
 Materi yang dibahas dalam modul ini meliputi:
