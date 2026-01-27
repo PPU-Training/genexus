@@ -60,6 +60,14 @@ window.menuData = [
         name: "Delete data from a table",
         file: "/docs/case-studies/delete-data-from-a-table.md",
       },
+      {
+        name: "Search data from a table",
+        file: "/docs/case-studies/search-data-from-a-table.md",
+      },
+      {
+        name: "Pagination of a table",
+        file: "/docs/case-studies/pagination-of-a-table.md",
+      },
     ],
   },
 ];
