@@ -45,20 +45,20 @@ window.menuData = [
     icon: "code-2",
     submenus: [
       {
-        name: "Show data on table",
-        file: "/docs/case-studies/show-data-on-table.md",
+        name: "Show data in a table",
+        file: "/docs/case-studies/show-data-in-a-table.md",
       },
       {
-        name: "Insert data to table",
-        file: "/docs/case-studies/insert-data-to-table.md",
+        name: "Insert data into a table",
+        file: "/docs/case-studies/insert-data-into-a-table.md",
       },
       {
-        name: "Update data to table",
-        file: "/docs/case-studies/update-data-to-table.md",
+        name: "Update data in a table",
+        file: "/docs/case-studies/update-data-in-a-table.md",
       },
       {
-        name: "Delete data on table",
-        file: "/docs/case-studies/delete-data-on-table.md",
+        name: "Delete data from a table",
+        file: "/docs/case-studies/delete-data-from-a-table.md",
       },
     ],
   },

@@ -1,3 +1,3 @@
-# Insert data to table
+# Show data in a table
 
 This content will be updated soon.
