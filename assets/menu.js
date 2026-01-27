@@ -46,7 +46,19 @@ window.menuData = [
     submenus: [
       {
         name: "Show data on table",
-        file: "/docs/development/show-data-on-table.md",
+        file: "/docs/case-studies/show-data-on-table.md",
+      },
+      {
+        name: "Insert data to table",
+        file: "/docs/case-studies/insert-data-to-table.md",
+      },
+      {
+        name: "Update data to table",
+        file: "/docs/case-studies/update-data-to-table.md",
+      },
+      {
+        name: "Delete data on table",
+        file: "/docs/case-studies/delete-data-on-table.md",
       },
     ],
   },
