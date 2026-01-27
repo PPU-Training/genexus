@@ -1,3 +1,4 @@
+
 # Show data in a table
 
 ## 1. Tinjauan Modul
@@ -25,12 +26,25 @@ Materi yang dibahas dalam modul ini meliputi:
 Bagian ini menjelaskan langkah-langkah teknis untuk mencapai tujuan pembelajaran pada modul ini, yaitu menampilkan data *Transaction* dalam bentuk tabel pada sebuah halaman (*Panel*).
 
 Secara umum, implementasi dilakukan melalui tahapan berikut:
-1. Mendefinisikan struktur data dengan membuat *Transaction*.
-	![enter image description here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/1.png)
-3. Memastikan data telah tersedia di dalam database.
-4. Membuat sebuah halaman (*Web Panel*).
-5. Menambahkan komponen tabel atau grid pada halaman.
-6. Menghubungkan tabel dengan *Transaction* agar data dapat ditampilkan secara otomatis.
-7. Melakukan pengujian untuk memastikan data tampil dengan benar.
+1. Membuat Structure Data Type (*SDT*)
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/1.png)
+2. Membuat sebuah halaman (*Web Panel*).
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/2.png)
+3. Membuat *Variable* didalam halaman dengan data type SDT Collection. 
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/3.png)
+4. Menambahkan komponen tabel atau grid pada halaman.
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/4.png)
+5. Mendefinisikan struktur data dengan membuat *Transaction*.
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/5.png)
+6. Memastikan data telah tersedia di dalam database.
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/6.png)
+7. Menghubungkan tabel (*Grid*) dengan *Transaction* agar data dapat ditampilkan secara otomatis dengan Data Provider.
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/7.png)
+  Pastikan Output SDT Collection
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/7.5.png)
+8. Menggunakan Data Provider untuk mengambil data dari *Transaction* di halaman.
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/8.png)
+9. Melakukan pengujian untuk memastikan data tampil dengan benar.
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/9.png)
 
 Dengan mengikuti langkah-langkah tersebut, data yang tersimpan dalam *Transaction* akan berhasil ditampilkan pada halaman dalam bentuk tabel sesuai dengan tujuan modul.
