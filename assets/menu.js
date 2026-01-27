@@ -4,12 +4,34 @@ window.menuData = [
     icon: "play",
     submenus: [
       {
+        name: "System Requirements",
+        file: "/docs/getting-started/requirements.md",
+      },
+      {
         name: "Installation Guide",
         file: "/docs/getting-started/installation.md",
       },
       {
-        name: "System Requirements",
-        file: "/docs/getting-started/requirements.md",
+        name: "My First Project",
+        file: "/docs/getting-started/my-first-project.md",
+      },
+    ],
+  },
+  {
+    title: "Core Concepts",
+    icon: "play",
+    submenus: [
+      {
+        name: "Knowledge Base",
+        file: "/docs/core-concepts/knowledge-base.md",
+      },
+      {
+        name: "Data Modeling",
+        file: "/docs/core-concepts/data-modeling.md",
+      },
+      {
+        name: "User Interface",
+        file: "/docs/core-concepts/user-interface.md",
       },
     ],
   },
