@@ -1,3 +1,4 @@
-# New
+# What's New
 
-This content will be updated soon.
+- Add new documentation in PPU Genexus Docs.
+- Add bugs for future fixes.

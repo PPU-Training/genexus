@@ -2,8 +2,6 @@
 
 Genexus adalah sebuah platform yang memungkinkan pengembang untuk membuat aplikasi web dan mobile dengan cepat dan mudah. Dengan menggunakan bahasa pemrograman yang mudah dipahami, pengembang dapat membuat aplikasi yang dapat diakses dari berbagai perangkat dan platform.
 
----
-
 ## Learning Path Syllabus
 | No  | Topic                                     | Description                                                                                                                                                                                                                            | Output                                                                         |
 | --- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
