@@ -13,10 +13,10 @@ Setelah menyelesaikan modul ini, peserta diharapkan mampu menyajikan data dari s
 
 **Ruang Lingkup Materi**  
 Materi yang dibahas dalam modul ini meliputi:
-- *Data Modeling*
-- *User Interface Design*
-- *Business Logic & Procedures*
-- *CRUD Operation (Read Operation)*
+- *- Data Modeling*
+- *- User Interface Design*
+- *- Business Logic & Procedures*
+- *- CRUD Operation (Read Operation)*
 
 ---
 
@@ -26,10 +26,11 @@ Bagian ini menjelaskan langkah-langkah teknis untuk mencapai tujuan pembelajaran
 
 Secara umum, implementasi dilakukan melalui tahapan berikut:
 1. Mendefinisikan struktur data dengan membuat *Transaction*.
-2. Memastikan data telah tersedia di dalam database.
-3. Membuat sebuah halaman (*Web Panel*).
-4. Menambahkan komponen tabel atau grid pada halaman.
-5. Menghubungkan tabel dengan *Transaction* agar data dapat ditampilkan secara otomatis.
-6. Melakukan pengujian untuk memastikan data tampil dengan benar.
+	![enter image description here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/1.png)
+3. Memastikan data telah tersedia di dalam database.
+4. Membuat sebuah halaman (*Web Panel*).
+5. Menambahkan komponen tabel atau grid pada halaman.
+6. Menghubungkan tabel dengan *Transaction* agar data dapat ditampilkan secara otomatis.
+7. Melakukan pengujian untuk memastikan data tampil dengan benar.
 
 Dengan mengikuti langkah-langkah tersebut, data yang tersimpan dalam *Transaction* akan berhasil ditampilkan pada halaman dalam bentuk tabel sesuai dengan tujuan modul.
