@@ -13,7 +13,10 @@ Setelah menyelesaikan modul ini, peserta akan mampu memperbaharui data dalam tab
 
 **Ruang Lingkup Materi**  
 Materi yang dibahas dalam modul ini meliputi:
-- *- Based on Syllabus*
+- *- Building Web Screens & Input Forms*
+- *- Business Logic & Procedures*
+- *- Data Modeling*
+- *- CRUD Operations (Update Operation)*
 
 ---
 
