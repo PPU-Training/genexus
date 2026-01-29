@@ -44,7 +44,6 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/7.5.png)
 8. Menggunakan Data Provider untuk mengambil data dari *Transaction* di halaman.
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/8.png)
-9. Melakukan pengujian untuk memastikan data tampil dengan benar.
-	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/9.png)
+9. Build All dan Selesai.
 
 Dengan mengikuti langkah-langkah tersebut, data yang tersimpan dalam *Transaction* akan berhasil ditampilkan pada halaman dalam bentuk tabel sesuai dengan tujuan modul.
