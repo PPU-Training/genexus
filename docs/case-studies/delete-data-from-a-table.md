@@ -29,17 +29,17 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/delete-data-from-a-table/1.png)
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/delete-data-from-a-table/1.5.png)
 2. Membuat sebuah button delete di (*Web Panel*)
-	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/2.png)
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/delete-data-from-a-table/2.png)
 3. Membuat (*Procedure*) untuk memperbaharui Data ke Tabel
-	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/3.png)
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/delete-data-from-a-table/3.png)
 4. Membuat variable untuk parameter input dan output di (*Procedure*).
-	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/4.png)
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/delete-data-from-a-table/4.png)
 5. Tambahkan kode Parm di tab Rules di (*Procedure*).
-  ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/5.png)
+  ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/delete-data-from-a-table/5.png)
 6. Tambahkan kode logika untuk memperbaharui data ke tabel di (*Procedure*).
-	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/6.png)
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/delete-data-from-a-table/6.png)
 7. Gunakan (*Procedure*) untuk memperbaharui data ke tabel di (*Web Panel*).
-	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/7.png)
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/delete-data-from-a-table/7.png)
 8. Build All dan Selesai.
 
 Dengan mengikuti langkah-langkah tersebut, data yang dihapus dengan tombol akan tidak ada di tabel.
