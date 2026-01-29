@@ -28,7 +28,7 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
 1. Membuat Structure Data Type (*SDT*)
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/1.png)
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/1.5.png)
-2. Membuat sebuah halaman detail (*Web Panel*) dan tambahkan input dan button sehingga membentuk sebuah form.
+2. Membuat sebuah button detail dan halaman detail (*Web Panel*) dan tambahkan input dan button sehingga membentuk sebuah form.
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/2.png)
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/2.5.png)
 3. Membuat (*Procedure*) untuk memperbaharui Data ke Tabel
@@ -43,4 +43,4 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/update-data-in-a-table/7.png)
 8. Build All dan Selesai.
 
-Dengan mengikuti langkah-langkah tersebut, ...
+Dengan mengikuti langkah-langkah tersebut, data yang diupdate akan terlihat di tabel.
