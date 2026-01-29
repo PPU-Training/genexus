@@ -41,6 +41,4 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/insert-data-into-a-table/6.png)
 7. Gunakan (*Procedure*) untuk menambahkan data ke tabel di (*Web Panel*).
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/insert-data-into-a-table/7.png)
-8. Build All dan Selesai.
-
-Dengan mengikuti langkah-langkah tersebut, data yang diisi akan berhasil ditambahkan ke database.
+8. Build All dan jalankan aplikasi

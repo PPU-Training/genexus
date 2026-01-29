@@ -40,6 +40,4 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/delete-data-from-a-table/6.png)
 7. Gunakan (*Procedure*) untuk memperbaharui data ke tabel di (*Web Panel*).
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/delete-data-from-a-table/7.png)
-8. Build All dan Selesai.
-
-Dengan mengikuti langkah-langkah tersebut, data yang dihapus dengan tombol akan tidak ada di tabel.
+8. Build All dan jalankan aplikasi

@@ -7,7 +7,7 @@
 Menampilkan Data ke Halaman Menggunakan Tabel
 
 **Deskripsi**  
-Modul ini membahas bagaimana menampilkan data yang berasal dari suatu *entity* ke dalam sebuah *screen* menggunakan komponen tabel di GeneXus.
+Modul ini membahas bagaimana menampilkan data yang berasal dari suatu *Transaction* ke dalam sebuah *Web Panel*.
 
 **Tujuan Pembelajaran**  
 Setelah menyelesaikan modul ini, peserta diharapkan mampu menyajikan data dari sebuah Transaction ke dalam tampilan aplikasi dalam bentuk tabel secara terstruktur dan mudah dibaca.
@@ -44,6 +44,4 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/7.5.png)
 8. Menggunakan Data Provider untuk mengambil data dari *Transaction* di halaman.
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/show-data-in-a-table/8.png)
-9. Build All dan Selesai.
-
-Dengan mengikuti langkah-langkah tersebut, data yang tersimpan dalam *Transaction* akan berhasil ditampilkan pada halaman dalam bentuk tabel sesuai dengan tujuan modul.
+9. Build All dan jalankan aplikasi
