@@ -68,6 +68,14 @@ window.menuData = [
         name: "Pagination of a table",
         file: "/docs/case-studies/pagination-of-a-table.md",
       },
+      {
+        name: "Basic Authentication",
+        file: "/docs/case-studies/basic-authentication.md",
+      },
+      {
+        name: "API Integration",
+        file: "/docs/case-studies/api-integration.md",
+      },
     ],
   },
 ];
