@@ -73,8 +73,16 @@ window.menuData = [
         file: "/docs/case-studies/basic-authentication.md",
       },
       {
-        name: "API Integration",
-        file: "/docs/case-studies/api-integration.md",
+        name: "Consume API",
+        file: "/docs/case-studies/consume-api.md",
+      },
+      {
+        name: "Expose API",
+        file: "/docs/case-studies/expose-api.md",
+      },
+      {
+        name: "Custom Design UI",
+        file: "/docs/case-studies/custom-design-ui.md",
       },
     ],
   },
