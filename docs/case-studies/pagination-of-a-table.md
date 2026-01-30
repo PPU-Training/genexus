@@ -21,7 +21,7 @@ Materi yang dibahas dalam modul ini meliputi:
 
 ## 2. Implementasi Teknis
 
-Bagian ini menjelaskan langkah-langkah teknis untuk ..
+Bagian ini menjelaskan langkah-langkah teknis untuk mengimplementasikan pagination pada tabel.
 
 Secara umum, implementasi dilakukan melalui tahapan berikut:
 1. Pastikan anda sudah mengikuti tutorial [Show Data in a Table](https://ppu-training.github.io/genexus/?file=%2Fdocs%2Fcase-studies%2Fshow-data-in-a-table.md)
@@ -34,3 +34,5 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
 5. Menambahkan event handler untuk pagination.
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/pagination-of-a-table/4.png)
 6. Build All dan jalankan aplikasi.
+
+[Referensi.](https://training.genexus.com/en/learning/pdf/paging-in-for-each-pattern-and-grid-pdf)
