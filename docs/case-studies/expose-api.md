@@ -30,7 +30,7 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/expose-api/1.5.png)
 2. Jika menggunakan Object API
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/expose-api/2.png)
-  ```
+
       UserAPICRUD {      // inisiasi object terlebih dahulu untuk penamaan bebas
         
         GetUsers(out:&SDT_Users) // Default POST
@@ -40,7 +40,7 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
         UserInsert(in:&SDT_User)
         => Proc_Insert_User(&SDT_User); // bentuk procedure kalau semisal dipanggil dan ada parameter inputnya codenya seperti ini.
       }
-  ```
+
   Dokumentasi API
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/expose-api/2.5.png)
 3. Build All dan Jalankan aplikasi.
