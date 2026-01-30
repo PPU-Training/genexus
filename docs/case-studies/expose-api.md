@@ -26,6 +26,8 @@ Bagian ini menjelaskan langkah-langkah teknis untuk membuat API Integration (Exp
 Secara umum, implementasi dilakukan melalui tahapan berikut:
 1. Jika menggunakan Procedure, ubah properties Export as Web Service jadi True.
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/expose-api/1.png)
+  Dokumentasi API
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/expose-api/1.5.png)
 2. Jika menggunakan Object API
 	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/expose-api/2.png)
   ```
@@ -39,4 +41,6 @@ Secara umum, implementasi dilakukan melalui tahapan berikut:
         => Proc_Insert_User(&SDT_User); // bentuk procedure kalau semisal dipanggil dan ada parameter inputnya codenya seperti ini.
       }
   ```
+  Dokumentasi API
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/expose-api/2.5.png)
 3. Build All dan Jalankan aplikasi.
