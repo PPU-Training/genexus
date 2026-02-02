@@ -23,4 +23,7 @@ Materi yang dibahas dalam modul ini meliputi:
 Bagian ini menjelaskan langkah-langkah teknis untuk membuat Custom Design UI.
 
 Secara umum, implementasi dilakukan melalui tahapan berikut:
-1.
+1. Buat style css di DSO.
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/custom-design-ui/1.png)
+2. Gunakan style css di komponen pada Web Panel.
+	![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/case-studies/custom-design-ui/2.png)
