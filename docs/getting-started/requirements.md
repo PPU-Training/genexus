@@ -1,137 +1,113 @@
 # GeneXus 18 Requirements
 
-The following is a list of the requirements to run **GeneXus 18**.
-
-## GeneXus IDE
-GeneXus IDE runs on the **Microsoft Windows Operating System**.
+Berikut adalah kebutuhan untuk menjalankan **GeneXus 18**.
 
 ---
 
-## Hardware Requirements
-- Processor: minimum of 1 GHz (multi-core recommended)
-- Memory: minimum of 4 GB RAM (8 GB recommended; 16 GB recommended for Android generation)
-- Hard Disk: minimum 1.2 GB for installation  
-  > Additional space required for knowledge bases and code generation
+## 🖥️ Sistem Operasi
+- Hanya berjalan di **Windows**
 
 ---
 
-## Software Requirements
-- Microsoft .NET Framework 4.7.1, 4.7.2, or 4.8 *(see note 1)*
-- Microsoft SQL Server 2012+ (Express/Standard/others) or LocalDB *(see note 4)*
-- Internet Explorer (Windows 10 or earlier), minimum 6.0 SP1 (11+ recommended) *(see note 2)*
-- Apache Maven 3.6.1+ *(see note 3)*
-- .NET SDK 8 *(see note 5)*
-
-### Notes
-1. Live Editing requires Windows 8.1+
-2. Uses MSHTML libraries for HTML Editor
-3. Required for installing/distributing modules
-4. LocalDB only for Knowledge Base creation
-5. Required if using Query or Dashboard objects
-
-> **Note:** Admin rights are not required if SAC #39359 steps are followed.
+## ⚙️ Hardware Minimum
+- **Processor:** 1 GHz (disarankan multi-core)
+- **RAM:** 4 GB (disarankan 8 GB, 16 GB untuk Android)
+- **Storage:** 1.2 GB (butuh tambahan untuk project & build)
 
 ---
 
-## Generation Requirements
+## 💻 Software
+- .NET Framework 4.7.1 / 4.7.2 / 4.8
+- SQL Server 2012+ atau LocalDB
+- Internet Explorer (khusus Windows 10 ke bawah)
+- Apache Maven 3.6.1+
+- .NET SDK 8
 
-| Generator        | Requirements |
-|------------------|-------------|
-| .NET Framework   | ADO .NET provider for DBMS |
-| .NET             | .NET SDK 8 |
-| Java (1)         | Oracle JDK / OpenJDK 17+ (2) |
-| Native Mobile    | Apple & Android requirements |
-| Angular          | Angular requirements |
-
-### Notes
-1. Supported servers:
-   - Apache Tomcat (7.0.67 – 11.x)
-   - Spring Boot (JDK 17–21)
-2. JDK 17+ improves compilation performance
+### Catatan
+- Windows 8.1+ untuk Live Editing
+- LocalDB hanya untuk Knowledge Base
+- .NET SDK 8 wajib untuk Query/Dashboard
 
 ---
 
-## Execution Requirements
+## 🏗️ Kebutuhan Generate
 
-| Generator        | Requirements |
-|------------------|-------------|
-| .NET Framework   | .NET Framework 4.6.2+, IIS 6+, ADO .NET, URL Rewrite |
-| .NET             | ASP.NET Core Runtime 8.x Hosting Bundle |
-| Java             | JRE/OpenJDK 17+, Java EE/Jakarta EE Server, JDBC Driver |
-| Native Mobile    | Apple & Android requirements |
-| Angular          | Angular requirements |
+| Generator | Kebutuhan |
+|----------|----------|
+| .NET Framework | ADO .NET Provider |
+| .NET | .NET SDK 8 |
+| Java | JDK 17+ |
+| Mobile | Requirement Apple & Android |
+| Angular | Requirement Angular |
 
-### Notes
-1. Use 4.7.2 if SameSite cookie is set
-2. IIS 8 required for WebSocket
-3. Servlet spec: 3.0 – 6.0
-4. JDBC drivers obtained at build time
-5. Hosting bundle required for IIS deployment
+**Tambahan:**
+- Server: Tomcat / Spring Boot
+- Disarankan JDK 17+
 
 ---
 
-## Supported DBMS
+## ▶️ Kebutuhan Runtime
 
-### Main Generators (.NET, Java)
-
-- DB2 Universal Database (7.1+)
-- DB2 UDB for iSeries (V5R1+)
-- Informix (7.31+)
-- MySQL (4.x+)
-- Oracle (8.1.5+)
-- PostgreSQL (7.x+)
-- SQL Server (2000+)
-- SAP Hana DB (1.0+)
-
-### Mobile
-- SQLite (built-in Android/iOS)
-
-### Notes
-- DB2 iSeries requires IBM license
-- Informix requires DRDA protocol
-- MySQL ≥ 5.0.3 for GAM/GXflow
-- Oracle ≥ 9 for GXflow
-- SQL Server ≥ 2012 for GXflow
+| Generator | Kebutuhan |
+|----------|----------|
+| .NET Framework | .NET 4.6.2+, IIS, URL Rewrite |
+| .NET | ASP.NET Core Runtime 8 |
+| Java | JRE 17+, Java EE Server |
+| Mobile | Requirement Apple & Android |
+| Angular | Requirement Angular |
 
 ---
 
-## Supported Browsers
+## 🗄️ Database yang Didukung
 
-### Minimum Versions
+- DB2
+- Informix
+- MySQL
+- Oracle
+- PostgreSQL
+- SQL Server
+- SAP Hana
 
-| Browser           | Min Version | Recommended |
-|-------------------|------------|-------------|
-| Firefox           | 97         | Latest / ESR |
-| Chrome            | 99         | Latest |
-| Safari            | 15.4       | Latest |
-| Edge              | 99         | Latest |
-
-### Notes
-- Must support **CSS Cascade Layers**
-- Must support **ES6 modules**
-- jQuery 3.5.1 compatibility required
+**Mobile:**
+- SQLite (bawaan Android/iOS)
 
 ---
 
-## Additional Notes
+## 🌐 Browser Support
 
-### WebSocket Enable (Windows)
-1. Open **Windows Features**
-2. Navigate to:
+| Browser | Minimum |
+|--------|--------|
+| Firefox | 97 |
+| Chrome | 99 |
+| Safari | 15.4 |
+| Edge | 99 |
+
+**Wajib:**
+- Support CSS Cascade Layers
+- Support ES6 Modules
+
+---
+
+## 🔧 Catatan Tambahan
+
+### Aktifkan WebSocket (Windows)
+1. Buka **Windows Features**
+2. Masuk ke:
    - IIS → WWW Services → Application Development
-3. Enable **WebSocket Protocol**
+3. Aktifkan **WebSocket Protocol**
 
 ---
 
-## Mac / Linux Support
-GeneXus IDE requires Windows.
+## 🍎 Mac & Linux
 
-- Use Virtual Machine on Mac/Linux
-- Alternative: **GeneXus Next**
+- Tidak support langsung
+- Gunakan:
+  - Virtual Machine (Windows)
+  - Alternatif: GeneXus Next
 
 ---
 
-## References
-- CSS support: https://caniuse.com/css-cascade-layers  
-- ES6 modules: https://caniuse.com/es6-module  
-- jQuery support: https://jquery.com/browser-support/
+## 🔗 Referensi
+- https://caniuse.com/css-cascade-layers  
+- https://caniuse.com/es6-module  
+- https://jquery.com/browser-support/
