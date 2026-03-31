@@ -10,4 +10,4 @@ Maka akan muncul popup seperti ini, setelah itu tinggal beri nama saja, dan set 
 ![Example](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/getting-started/3.png)
 
 Setelah selesai maka akan muncul seperti ini, dan tinggal mulai membuat aplikasi.
-![Example](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/getting-started/4.png)
+![Example](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/getting-started/finish.png)
