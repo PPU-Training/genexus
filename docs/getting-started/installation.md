@@ -23,7 +23,7 @@ Panduan ini mencakup:
 2. Cari email dari GeneXus
 3. Klik link download installer di dalam email
 
-![Email Example](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/getting-started/ss-email.png)
+![Example](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/getting-started/ss-email.png)
 
 > Jika tidak ada, cek folder **Spam / Promotions**
 
