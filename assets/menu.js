@@ -38,7 +38,7 @@ window.menuData = [
   {
     title: "Development",
     icon: "code-2",
-    submenus: [{ name: "Generators", file: "/docs/development/generators.md" }],
+    submenus: [{ name: "Componets", file: "/docs/development/components.md" }],
   },
   {
     title: "Case Studies",
