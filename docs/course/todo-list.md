@@ -43,3 +43,17 @@ Todo
 ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/3.png)
 Todo Detail
 ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/4.png)
+
+- Buat Procedures
+![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/12.png)
+
+- Kode procedure mengambil semua data (Server Side)
+- Kode procedure mengambil data berdasarkan id (Server Side)
+- Kode procedure untuk membuat data baru (Server Side)
+- Kode procedure untuk memperbaharui data (Server Side)
+- Kode procedure untuk menghapus data (Server Side)
+- Kode untuk perpindahan halaman (Client Side)
+- Kode untuk Mengambil data dari procedure (Client Side)
+- Kode filter data  (Client Side)
+- Kode hapus filter  (Client Side)
+- Kode pagination (Client Side)
