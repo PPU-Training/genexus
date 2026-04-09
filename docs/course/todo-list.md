@@ -8,6 +8,7 @@ ToDo List adalah aplikasi pencatatan tugas untuk produktivitas harian pengguna.
 ##  Persiapan
 - Design Systems [Download](#)
 - Components Pagination [Download](#)
+- Bootstrap v3.4 [Lihat](https://getbootstrap.com/docs/3.4/css/#overview)
 
 ## Langkah
 - Buka GeneXus
@@ -18,11 +19,24 @@ ToDo List adalah aplikasi pencatatan tugas untuk produktivitas harian pengguna.
 - Knowledge Manager > Import > Pilih file .XPZ lalu load
 ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/5.png)
 
+- Buat sebuah Transaction <br>
+Transaction ToDo
+![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/7.png)
+Transaction ToDo Detail
+![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/8.png)
+
+- Buat Structure Data Type (SDT)
+![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/6.png)
+![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/9.png)
+![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/10.png)
+![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/11.png)
+
+
 - Buat Web Panel ToDo dan ToDO Detail
 ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/2.png)
 
-- Buat tampilan seperti gambar
-Todo Master
+- Buat tampilan seperti gambar <br>
+Todo
 ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/3.png)
 Todo Detail
 ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/4.png)
