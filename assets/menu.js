@@ -89,4 +89,9 @@ window.menuData = [
       },
     ],
   },
+  {
+    title: "Course",
+    icon: "code-2",
+    submenus: [{ name: "Todo List", file: "/docs/course/todo-list.md" }],
+  },
 ];
