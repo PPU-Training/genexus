@@ -26,12 +26,8 @@ window.menuData = [
         file: "/docs/core-concepts/knowledge-base.md",
       },
       {
-        name: "Data Modeling",
-        file: "/docs/core-concepts/data-modeling.md",
-      },
-      {
-        name: "User Interface",
-        file: "/docs/core-concepts/user-interface.md",
+        name: "Generator",
+        file: "/docs/core-concepts/generator.md",
       },
     ],
   },
@@ -92,5 +88,10 @@ window.menuData = [
         file: "/docs/case-studies/custom-design-ui.md",
       },
     ],
+  },
+  {
+    title: "Course",
+    icon: "code-2",
+    submenus: [{ name: "Todo List", file: "/docs/course/todo-list.md" }],
   },
 ];

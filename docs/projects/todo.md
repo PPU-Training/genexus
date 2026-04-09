@@ -6,20 +6,20 @@ UI
 - ToDoList -> Design Systems
 
 Schema
-Schema of Todo
+Schema of Todos
    {
-        "todo_id": 1,
-        "todo_topic": "Belajar Genexus",
-        "todo_description": "Belajar Genexus Di Perkasa Pilar Utama",
-        "todo_dueDate": "2026-04-02",
-        "statusTodo_id": 1,
-        "todo_isActive": true
+        "todos_id": 1,
+        "todos_topic": "Belajar Genexus",
+        "todos_description": "Belajar Genexus Di Perkasa Pilar Utama",
+        "todos_dueDate": "2026-04-02",
+        "statusTodos_id": 1,
+        "todos_isActive": true
     }
-Schema of StatusTodo
+Schema of StatusTodos
    {
-        "statusTodo_id": 1,
-        "statusTodo_tile": "Done",
-        "statusTodo_isActive": true
+        "statusTodos_id": 1,
+        "statusTodos_tile": "Done",
+        "statusTodos_isActive": true
     }
 
 Transaction
