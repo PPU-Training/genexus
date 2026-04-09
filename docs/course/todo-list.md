@@ -27,8 +27,11 @@ Transaction ToDo Detail
 
 - Buat Structure Data Type (SDT)
 ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/6.png)
+SDT Filter
 ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/9.png)
+SDT Response
 ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/10.png)
+SDT Todo
 ![appendix here](https://raw.githubusercontent.com/PPU-Training/genexus/refs/heads/main/assets/images/course/todo-list/11.png)
 
 
