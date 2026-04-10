@@ -6,8 +6,8 @@ ToDo List adalah aplikasi pencatatan tugas untuk produktivitas harian pengguna.
 - Task Board [Lihat](https://spotty-cover-c24.notion.site/333aadc976b380abb118e5bcf8edce17?v=333aadc976b38152ac5c000cf66cd1b7)
 
 ##  Persiapan
-- Design Systems [Download](#)
-- Components Pagination [Download](#)
+- Design Systems [Download](https://raw.githubusercontent.com/PPU-Training/genexus/6b549f1d6771e9bf5f884dfc530028c18592cf33/assets/images/course/todo-list/preparation/DSO_ToDoList.xpz)
+- Components Pagination [Download](https://raw.githubusercontent.com/PPU-Training/genexus/6b549f1d6771e9bf5f884dfc530028c18592cf33/assets/images/course/todo-list/preparation/Pagination.xpz)
 - Bootstrap v3.4 [Lihat](https://getbootstrap.com/docs/3.4/css/#overview)
 
 ## Langkah
