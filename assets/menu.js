@@ -44,6 +44,11 @@ window.menuData = [
     ],
   },
   {
+    title: "External Objects",
+    icon: "code-2",
+    submenus: [{ name: "Alert Dialog", file: "/docs/objects/alert-dialog.md" }],
+  },
+  {
     title: "Case Studies",
     icon: "code-2",
     submenus: [
