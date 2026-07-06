@@ -18,7 +18,7 @@ Berikut adalah kebutuhan untuk menjalankan **GeneXus 18**.
 
 ## 💻 Software
 - .NET Framework 4.7.1 / 4.7.2 / 4.8
-- SQL Server 2012+ atau LocalDB
+- SQL Server 2022+ https://www.microsoft.com/en-us/evalcenter/download-sql-server-2022
 - Internet Explorer (khusus Windows 10 ke bawah)
 - Apache Maven 3.6.1+
 - .NET SDK 8
